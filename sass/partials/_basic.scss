@@ -3,20 +3,24 @@ font-family: "lato-regular-webfont", Helvetica, Arial, sans-serif;
 color: #1c1e1e;
 }
 #one {
-    @include bg-image('../img/jpg/section01-bg.jpg', cover, top left, no-repeat);
+    @include bg-image('../img/jpg/section01-bg.jpg', cover, 0%, no-repeat);
     min-height: 700px;
-    @include MQ(L) {
-        min-height: 900px;
+
+    &.section {
+      position: relative;
+      padding: 2rem 0 2rem 0;
     }
+
+    h3 {
+      color: #efc441;
+      margin-top: 450px;
+      text-shadow: 0 0 50px #000, 0 1px 1px rgba(0, 0, 0, 0.49);
+    }
+
     div:nth-child(2) {
         margin-top: 300px;
     }
-    .input-group {
-        margin: 0 auto;
-        .form-control {
-            text-align: center;
-        }
-    }
+
     .btn {
         padding: 10.5px 12px;
         background-color: #1F9E7A;
@@ -29,13 +33,8 @@ color: #1c1e1e;
             color: #fff;
         }
     }
-    .row {
-        padding-top: 60px;
-    }
-    p#main-marketing-quote {
-        margin-top: -10px;
-    }
 }
+
 #two {
     min-height: 640px;
     h2{
@@ -99,8 +98,6 @@ color: #1c1e1e;
 
 .usertypes {
   @include bg-image('../img/jpg/bg-usertypes.jpg', cover, 50%, no-repeat);
-  border-top: 8px solid #fff;
-  border-bottom: 8px solid #fff;
 
   &.section .container:last-of-type {
     margin-top: 5rem;
