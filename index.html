@@ -1,154 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title> neuBees </title>
+      <title> Learn Bootstrap</title>
       <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
       <link rel="stylesheet" href="stylesheets/styles.css">
    </head>
    <body>
       <section id="one">
-         <div class="navbar navbar-fixed-top">
-            <div class="container">
-               <div class="navbar-header navbar-toggle hidden-xs">
-                  <button type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-               </div>
-               <ul id="navbar" class="nav navbar-nav navbar-right collapse navbar-collapse">
-                  <li><a href="#">Take the tour</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">Register</a></li>
-                  <li>
-                     <!-- Button trigger modal -->
-                     <button type="button" class="modal-trigger-login-btn btn btn-warning pull-right hidden-xs" data-toggle="modal" data-target="#myModal">Login</button>
-                  </li>
-               </ul>
-               <!-- Button trigger modal -->
-               <button id="modal-trigger-login-btn-only-phons" type="button" class="btn btn-warning navbar-fixed-top visible-xs" data-toggle="modal" data-target="#myModal">Login</button>
-               <!-- Modal -->
-               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <!--<div class="container">-->
-                        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-8 col-md-offset-2">
-                           <div class="panel panel-info" >
-                              <div class="panel-heading">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                 <div class="panel-title">Sign In</div>
-                                 <div style="float:right; font-size: 80%; position: relative; top:-10px; right:40px;"><a href="#">Forgot password?</a></div>
-                              </div>
-                              <div style="padding-top:30px" class="panel-body" >
-                                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                                 <form id="loginform" class="form-horizontal" role="form">
-                                    <div style="margin-bottom: 25px" class="input-group">
-                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                       <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
-                                    </div>
-                                    <div style="margin-bottom: 25px" class="input-group">
-                                       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                       <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                                    </div>
-                                    <div class="input-group">
-                                       <div class="checkbox">
-                                          <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <div style="margin-top:10px" class="form-group">
-                                       <!-- Button -->
-                                       <div class="col-sm-12 controls">
-                                          <a id="btn-login" href="#" class="btn btn-success">Login  </a>
-                                          <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
-                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                       <div class="col-md-12 control">
-                                          <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                             Don't have an account!
-                                             <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
-                                             Sign Up Here
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-10 col-md-offset-2">
-                           <div class="panel panel-info">
-                              <div class="panel-heading">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                 <div class="panel-title">Sign Up</div>
-                                 <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
-                              </div>
-                              <div class="panel-body" >
-                                 <form id="signupform" class="form-horizontal" role="form">
-                                    <div id="signupalert" style="display:none" class="alert alert-danger">
-                                       <p>Error:</p>
-                                       <span></span>
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="email" class="col-md-3 control-label">Email</label>
-                                       <div class="col-md-9">
-                                          <input type="text" class="form-control" name="email" placeholder="Email Address">
-                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="firstname" class="col-md-3 control-label">First Name</label>
-                                       <div class="col-md-9">
-                                          <input type="text" class="form-control" name="firstname" placeholder="First Name">
-                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="lastname" class="col-md-3 control-label">Last Name</label>
-                                       <div class="col-md-9">
-                                          <input type="text" class="form-control" name="lastname" placeholder="Last Name">
-                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="password" class="col-md-3 control-label">Password</label>
-                                       <div class="col-md-9">
-                                          <input type="password" class="form-control" name="passwd" placeholder="Password">
-                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                       <!-- Button -->
-                                       <div class="col-md-offset-3 col-md-9">
-                                          <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
-                                          <span style="margin-left:8px;">or</span>
-                                       </div>
-                                    </div>
-                                    <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
-                                       <div class="col-md-offset-3 col-md-9">
-                                          <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
-                                       </div>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--</div>-->
-               <!-- Modal ends -->
-            </div>
-         </div>
-         </div>
          <div class="row text-center">
             <img src="img/png/neubee-Logo.png" alt="Neubee Logo">
             <p id="main-marketing-quote" class="marketing-quotes-title">Where helpers and helpees are rewarded</p>
          </div>
-         <div id="i-need-help-with-wrp" class="container">
-            <label for="inputHelpBlock">Subscribe to get updates:</label>
-            <input type="text" id="inputHelpBlock"
-            class="form-control extra-text-box-style"
-            placeholder="email@adress.com" aria-describedby="helpBlock">
+         <div class="container text-center">
+            <div class="input-group">
+               <input type="text" class="form-control extra-text-box-style" placeholder="your email address">
+               <button class="btn text-right success" type="button">                  <a href="#">
+               <i class="glyphicon glyphicon-send"></i>
+               </a></button>
+            </div>
          </div>
       </section>
       <!-- ******************************
@@ -156,239 +25,106 @@
          ***********************************-->
       <section id="two">
          <div class="row text-center">
-            <p class="marketing-quotes-title">Latest Requests</p>
-            <p class="marketing-quotes-text">Here comes a cool marketing text for our section</p>
+            <p class="marketing-quotes-title">Two types of users</p>
          </div>
-         <div class="container">
-            <div class="col-md-3 col-md-offset-2 well-lg">
-               <div class="well">
-                  <p class="ask-for-help-title">Who can translate this phone message for me?</p>
-                  <button class="btn">help</button>
-                  <i class="glyphicon glyphicon-heart"></i>
-                  <p>Here comes some nice text
-                     Here comes some nice text
+         <div class="wrp">
+            <div class="col-md-5 col-md-offset-1">
+               <div class="well-lg text-center">
+                  <img src="img/png/neuBee.png" alt="neuBee" width="150px" height="150px">
+                  <h2>neuBee</h2>
+                  <p>neuBees are the new commers on the app, who needs help
                   </p>
+                  <!-- ************test S************ -->
+                  <ul>
+                     <li>ask question </li>
+                     <li>get answer</li>
+                     <li>give points</li>
+                  </ul>
+                  <!-- ************test E************ -->
                </div>
             </div>
-            <div class="col-md-3 well-lg">
-               <div class="well">
-                  <p class="ask-for-help-title">Who can translate this phone message for me?</p>
-                  <button class="btn btn-primary">help</button>
-                  <i class="glyphicon glyphicon-heart"></i>
-                  <p>Here comes some nice text
-                     Here comes some nice text
+            <div class="col-md-5">
+               <div class="well-lg text-center">
+                  <img src="img/png/proBee.png" alt="proBee" width="150px" height="150px">
+                  <h2>proBee</h2>
+                  <p>proBees are the old members of the App, who are ready to help
                   </p>
-               </div>
-            </div>
-            <div class="col-md-3 well-lg">
-               <div class="well">
-                  <p class="ask-for-help-title">Who can translate this phone message for me?</p>
-                  <button class="btn">help</button>
-                  <i class="glyphicon glyphicon-heart"></i>
-                  <p>Here comes some nice text
-                     Here comes some nice text
-                  </p>
+                  <!-- ************test S************ -->
+                  <ul>
+                     <li>search question </li>
+                     <li>answer question</li>
+                     <li>get rewards</li>
+                  </ul>
+                  <!-- ************test E************ -->
                </div>
             </div>
          </div>
       </section>
+      <!-- ******************************
+         ***********************************
+         ***********************************-->
+      <div class="divider-wrp">
+         <div class="divider"></div>
+      </div>
       <!-- ******************************
          ***********************************
          ***********************************-->
       <section id="three">
          <div class="row text-center">
-            <p class="marketing-quotes-title">How dos it work?</p>
+            <p class="marketing-quotes-title">neuBees</p>
             <p class="marketing-quotes-text text-color-section3">Here comes a cool marketing text for our section</p>
          </div>
          <div class="container text-center">
             <div class="col-md-4">
-               <img src="img/png/gem.png" alt="" class="img-fluid">
-               <h2>get rewards</h2>
-               <p class="text-color-section3">Here comes some nice text
-                  Here comes some nice text Here comes some nice text
-               </p>
+               <img src="img/png/askQuestion.png" alt="" class="img-fluid">
+               <h2>ask question</h2>
             </div>
             <div class="col-md-4">
-               <img src="img/png/gem.png" alt="" class="img-fluid">
-               <h2>get rewards</h2>
-               <p class="text-color-section3">Here comes some nice text Here comes some nice text
-                  Here comes some nice text
-               </p>
+               <img src="img/png/getAnswer.png" alt="" class="img-fluid">
+               <h2>get answer</h2>
             </div>
             <div class="col-md-4">
-               <img src="img/png/gem.png" alt="" class="img-fluid">
-               <h2>get rewards</h2>
-               <p class="text-color-section3">Here comes some nice text Here comes some nice text
-                  Here comes some nice text put your text here
-               </p>
+               <img src="img/png/givePoints.png" alt="" class="img-fluid">
+               <h2>give points</h2>
             </div>
          </div>
       </section>
+      <!-- ******************************
+         ***********************************
+         ***********************************-->
+      <div class="divider-wrp">
+         <div class="divider"></div>
+      </div>
       <!-- ******************************
          ***********************************
          ***********************************-->
       <section id="four">
          <div class="row text-center">
-            <p class="marketing-quotes-title">Top proBees</p>
-            <p class="marketing-quotes-text">these bees have achieved the highest beePoints by helping</p>
+            <p class="marketing-quotes-title">proBees</p>
+            <p class="marketing-quotes-text text-color-section3">Here comes a cool marketing text for our section</p>
          </div>
-         <div class="wrp">
-            <div class="col-md-3">
-               <div class="well well-lg text-center">
-                  <img src="img/dummy/jpg/profile1.jpg" alt="..." class="img-circle" width="150px" height="150px">
-                  <h2>Marry Klaus</h2>
-                  <p>Here comes some nice text
-                     Here comes some nice text
-                  </p>
-               </div>
+         <div class="container text-center">
+            <div class="col-md-4">
+               <img src="img/png/searchQuestion.png" alt="" class="img-fluid">
+               <h2>search question</h2>
             </div>
-            <div class="col-md-3">
-               <div class="well well-lg text-center">
-                  <img src="img/dummy/jpg/profile2.jpg" alt="..." class="img-circle" width="150px" height="150px">
-                  <h2>Farhang Armin</h2>
-                  <p>Here comes some nice text
-                     Here comes some nice text
-                  </p>
-               </div>
+            <div class="col-md-4">
+               <img src="img/png/answerQuestion.png" alt="" class="img-fluid">
+               <h2>answer question</h2>
             </div>
-            <div class="col-md-3">
-               <div class="well well-lg text-center">
-                  <img src="img/dummy/jpg/profile3.jpg" alt="..." class="img-circle" width="150px" height="150px">
-                  <h2>Josef Joetz</h2>
-                  <p>Here comes some nice text
-                     Here comes some nice text
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-3">
-               <div class="well well-lg text-center">
-                  <img src="img/dummy/jpg/profile4.jpg" alt="..." class="img-circle" width="150px" height="150px">
-                  <h2>Aylin Ghanabati</h2>
-                  <p>Here comes some nice text
-                     Here comes some nice text
-                  </p>
-                  <!--  <div class="profile-footer">
-                     <span class="col-md-6" style="border-right:1px solid #ccc; margin-top:10px;">214K fans</span>
-                     <span class="col-md-6" style="margin-top:10px;">Stalking</span>
-                     </div>-->
-               </div>
+            <div class="col-md-4">
+               <img src="img/png/getRewards.png" alt="" class="img-fluid">
+               <h2>get rewards</h2>
             </div>
          </div>
       </section>
       <!-- ******************************
          ***********************************
          ***********************************-->
-      <section id="five">
-         <!-- Carousel
-            ================================================== -->
-         <div id="myCarousel" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="item active">
-                  <img src="http://placehold.it/1500X500" class="img-responsive">
-                  <div class="container">
-                     <div class="carousel-caption">
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="http://placehold.it/1500X500" class="img-responsive">
-                  <div class="container">
-                     <div class="carousel-caption">
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="http://placehold.it/1500X500" class="img-responsive">
-                  <div class="container">
-                     <div class="carousel-caption">
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <i class="glyphicon glyphicon-chevron-left"></i>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <i class="glyphicon glyphicon-chevron-right"></i>
-            </a>
-         </div>
-         <!-- /.carousel -->
-      </section>
+      <div id="footer" class="text-center">@copy-right</div>
       <!-- ******************************
          ***********************************
          ***********************************-->
-      <section id="six">
-         <div class="row text-center">
-            <p class="marketing-quotes-title">neuBees is sponsored by</p>
-            <p class="marketing-quotes-text">Here comes a cool marketing text for our section</p>
-         </div>
-         <div class="wrp">
-            <div class="col-md-1 col-md-offset-3">
-               <a href="#"><img src="img/dummy/png/zalando.png" alt="Zalando"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/fossil.png" alt="Fossil"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/dorothyperkins.png" alt="Dorothyperkins"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/starbucks.png" alt="Starbucks"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/adidas.png" alt="Adidas"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/nike.png" alt="Nike"></a>
-            </div>
-         </div>
-      </section>
-      <section id="seven">
-         <div class="row text-center">
-            <p class="marketing-quotes-title">Subscribe to our newsletter</p>
-            <p class="marketing-quotes-text">We are in Beta. Get notified when we launch officially.</p>
-         </div>
-         <!--<div class="container text-center">
-            <div class="input-group">
-               <input type="text" class="form-control extra-text-box-style" placeholder="your email address">
-               <span class="input-group-btn">
-                  <a href="#">
-                  <span class="glyphicon glyphicon-send"></span>
-                </a>-->
-                  <!--  <button class="btn btn-secondary" type="button">Go!</button>-->
-               <!--</span>-->
-            </div>
-         </div>
-      </section>
-      <section id="eight">
-         <div class="row text-center">
-            <p class="marketing-quotes-title">Follow neuBee on</p>
-         </div>
-         <div class="wrp text-center">
-            <div class="col-md-1 col-md-offset-4">
-               <a href="#"><img src="img/png/facebook.png" alt="facebook"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/png/twitter.png" alt="twitter"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/pinterest.png" alt="pinterest"></a>
-            </div>
-            <div class="col-md-1">
-               <a href="#"><img src="img/dummy/png/googleplus.png" alt="google+"></a>
-            </div>
-         </div>
-         <div id="copy-right" class="row text-center">
-            <p>Copyright@neuBee</p>
-         </div>
-      </section>
       <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
    </body>

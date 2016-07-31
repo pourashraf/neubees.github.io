@@ -1,78 +1,107 @@
-@import "cover";
-
-
+body{
+font-family: "lato-regular-webfont", Helvetica, Arial, sans-serif;
+}
+#one {
+    @include bg-image('../img/jpg/section01-bg.jpg', cover, 50% 0, no-repeat);
+    min-height: 700px;
+    @include MQ(L) {
+        min-height: 900px;
+    }
+    div:nth-child(2) {
+        margin-top: 300px;
+    }
+    .input-group {
+        margin: 0 auto;
+        .form-control {
+            text-align: center;
+        }
+    }
+    .btn {
+        padding: 10.5px 12px;
+        background-color: #1F9E7A;
+        margin-left: -15px;
+        margin-right: -52px;
+        &:hover {
+            background-color: #23B58C;
+        }
+        >a {
+            color: #fff;
+        }
+    }
+    .row {
+        padding-top: 60px;
+    }
+    p#main-marketing-quote {
+        margin-top: -10px;
+    }
+}
 #two {
-    min-height: 600px;
+    min-height: 640px;
     div.well-lg {
         margin: 30px 0 0 90px;
     }
     .glyphicon {
         color: red;
     }
+    ul {
+        li {
+            padding-bottom: 20px;
+            list-style: none;
+            position: relative;
+            font: 1.1em lato-bold-webfont;
+            &:before {
+                background-size: 30px 30px;
+                //background-image: url("../img/png/list-checkmark.png");
+                position: absolute;
+                content: '';
+                display: block;
+                height: 30px;
+                width: 30px;
+                left: -55px;
+            }
+        }
+    }
 }
 #three {
-    background-color: #406980;
     min-height: 550px;
-    color: #fff;
     .container {
         margin-top: 60px;
-    }
-    .text-color-section3 {
-        color: #b9c8d1;
     }
     img.img-fluid {
         max-width: 50%;
     }
 }
-#five {
-    background-color: $yellow;
-    .carousel-inner>.item {
-        left: 0;
-        margin: 0 auto;
-    }
-}
 #four {
+    .container {
+        margin-top: 60px;
+    }
     div.well {
         background-color: $white-low;
         border-color: #eee;
     }
-    div.profile-footer {
-        border-top: 1px solid #ccc;
-        background-color: #e3e3e3;
-        padding-bottom: 40px;
+    img.img-fluid {
+        max-width: 50%;
     }
 }
-#seven {
-    background-color: #006650;
-    color: #fff;
-    p.marketing-quotes-text {
-        color: lightgray;
-    }
-    .input-group .form-control {
-        text-align: center;
-    }
-    .btn {
-        padding: 10.5px 12px;
-        border-radius: 15px;
-        margin-left: -15px;
-    }
+#footer{
+  height:50px;
+  background-color:#156951;
+  color:#fff;
+  padding-top: 15px;
 }
-#eight {
-    div#copy-right {
-        margin-top: 300px;
-    }
-}
+
 section {
     min-height: 35em;
-    &:nth-child(even) {
-        background-color: $even-section-bg-color;
-    }
+    background-color: $section-bg-color;
+    font: 1.2em lato-regular-webfont;
 }
-[role="document"] {
-    z-index: 2000;
+
+.divider-wrp {
+    background-color: $section-bg-color;
 }
 p.marketing-quotes-title {
     font-size: xx-large;
+    margin-top: 60px;
 }
 p.marketing-quotes-text {
     font-size: large;
@@ -82,62 +111,46 @@ p.marketing-quotes-text {
 p.ask-for-help-title {
     font-size: x-large;
 }
-
-#navbar {
-    li {
-        a {
-            color: $navbar-link-color;
-            &:focus, &:hover {
-                background-color: #338473;
-                color: white;
-            }
-        }
-        .modal-trigger-login-btn {
-            margin-top: 10px;
-            padding: 3px 22px;
-            margin-left: 12px;
-        }
+#i-need-help-with-wrp {
+    width: 430px;
+    margin-top: 320px;
+    @include MQ(XXS) {
+        margin-top: 170px;
+    }
+    >label {
+        font-size: x-large;
+        font-weight: normal;
     }
 }
-#modal-trigger-login-btn-only-phons {
-    background-color: $yellow;
-    height: 50px;
-    width: 70%;
-    border-radius: 0;
-    margin: 0 auto;
-    font-size: 18px;
-}
-#signinlink {
-    margin-right: 60px;
-}
-#btn-signup {
-    background-color: $yellow;
-    border-color: #fff;
-}
+
 p {
-    word-break: break-all;
+    word-break: break-word;
 }
-.wrp {
-    margin-top: 60px;
+input.extra-text-box-style {
+    background-color: rgba(255, 255, 255, .6);
+    height: 43px;
+    font-size: 22px;
 }
-
+div.divider {
+    height: 10px;
+    background: url('../img/png/hexagon.png') repeat-x;
+}
 /*************************************************
-**********overwrite Bootstrap classes ************
+**********font formats ************
 **************************************************/
-
-.panel-info {
-    border-color: #fff;
-    .panel-heading {
-        color: white;
-        background-color: #f0ad4e;
-        border-color: #fff;
-    }
+@font-face {
+    font-family: lato-regular-webfont;
+    src: url("../fonts/lato-regular-webfont.ttf") format('ttf'), url("../fonts/lato-regular-webfont.eot") format('eot'), url("../fonts/lato-regular-webfont.woff") format('woff'), url("../fonts/lato-regular-webfont.woff2") format('woff2'), url("../fonts/lato-regular-webfont.svg") format('svg');
 }
-.btn-success {
-    color: #fff;
-    background-color: #f0ad4e;
-    border-color: white;
+@font-face {
+    font-family: lato-black-webfont;
+    src: url("../fonts/lato-black-webfont.ttf") format('ttf'), url("../fonts/lato-black-webfont.eot") format('eot'), url("../fonts/lato-black-webfont.woff") format('woff'), url("../fonts/lato-black-webfont.woff2") format('woff2'), url("../fonts/lato-black-webfont.svg") format('svg');
 }
-.modal-content {
-    border: none;
+@font-face {
+    font-family: lato-bold-webfont;
+    src: url("../fonts/lato-bold-webfont.ttf") format('ttf'), url("../fonts/lato-bold-webfont.eot") format('eot'), url("../fonts/lato-bold-webfont.woff") format('woff'), url("../fonts/lato-bold-webfont.woff2") format('woff2'), url("../fonts/lato-bold-webfont.svg") format('svg');
+}
+@font-face {
+    font-family: lato-light-webfont;
+    src: url("../fonts/lato-light-webfont.ttf") format('ttf'), url("../fonts/lato-light-webfont.eot") format('eot'), url("../fonts/lato-light-webfont.woff") format('woff'), url("../fonts/lato-light-webfont.woff2") format('woff2'), url("../fonts/lato-light-webfont.svg") format('svg');
 }

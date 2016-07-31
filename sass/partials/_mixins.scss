@@ -21,15 +21,6 @@ $color) {
     -ms-user-select: none;
     user-select: none;
 }
-@mixin multi-columns($count,
-$gap) {
-    -moz-column-count: $count;
-    -moz-column-gap: $gap;
-    -webkit-column-count: $count;
-    -webkit-column-gap: $gap;
-    column-count: $count;
-    column-gap: $gap;
-}
 /********************* Media Query Mixin ****************/
 
 @mixin MQ($viewport) {
@@ -54,12 +45,7 @@ $gap) {
         }
     }
     @else if $viewport L {
-        @media only screen and (max-width: $L) and (min-width: $M + 1) {
-            @content;
-        }
-    }
-    @else if $viewport XL {
-        @media only screen and (max-width: $XL) and (min-width: $M + 1) {
+        @media only screen and (max-width: $L){
             @content;
         }
     }
