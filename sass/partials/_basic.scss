@@ -68,29 +68,53 @@ color: #1c1e1e;
     }
 }
 
-@import "neuBees";
+.section {
+  padding: 2rem 0 8rem 0;
+  font-family: lato-light-webfont;
+      background-color: #f3f3f3;
+  h2 {
+    font-size: 57px;
+    color: #efc441;
+  }
 
-#three {
-    min-height: 550px;
-    .container {
-        margin-top: 60px;
-    }
-    img.img-fluid {
-        max-width: 50%;
-    }
+  h3 {
+    color: #5a6565;
+    font-size: 42px;
+    margin-bottom: 1.3rem;
+  }
+
+  p {
+    font-size: 28px;
+    color: #707575;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+  .container {
+    margin-top: 5rem;
+  }
+  .container:last-of-type {
+    margin-top: 8rem;
+  }
 }
-#four {
-    .container {
-        margin-top: 60px;
-    }
-    div.well {
-        background-color: $white-low;
-        border-color: #eee;
-    }
-    img.img-fluid {
-        max-width: 50%;
-    }
+
+.usertypes {
+  @include bg-image('../img/jpg/bg-usertypes.jpg', cover, 50%, no-repeat);
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+
+  &.section .container:last-of-type {
+    margin-top: 5rem;
+  }
+
+  p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  h2 { color: #4e809c; }
+  h3 { margin-bottom: 1.7rem; }
 }
+
 #footer{
   height:50px;
   background-color:#156951;
@@ -141,7 +165,7 @@ input.extra-text-box-style {
 }
 
 div.divider {
-    height: 2px;
+    height: 0;
     position: relative;
     width: 100%;
     margin: 0;
