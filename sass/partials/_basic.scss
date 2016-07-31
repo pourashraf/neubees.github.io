@@ -1,0 +1,143 @@
+@import "cover";
+
+
+#two {
+    min-height: 600px;
+    div.well-lg {
+        margin: 30px 0 0 90px;
+    }
+    .glyphicon {
+        color: red;
+    }
+}
+#three {
+    background-color: #406980;
+    min-height: 550px;
+    color: #fff;
+    .container {
+        margin-top: 60px;
+    }
+    .text-color-section3 {
+        color: #b9c8d1;
+    }
+    img.img-fluid {
+        max-width: 50%;
+    }
+}
+#five {
+    background-color: $yellow;
+    .carousel-inner>.item {
+        left: 0;
+        margin: 0 auto;
+    }
+}
+#four {
+    div.well {
+        background-color: $white-low;
+        border-color: #eee;
+    }
+    div.profile-footer {
+        border-top: 1px solid #ccc;
+        background-color: #e3e3e3;
+        padding-bottom: 40px;
+    }
+}
+#seven {
+    background-color: #006650;
+    color: #fff;
+    p.marketing-quotes-text {
+        color: lightgray;
+    }
+    .input-group .form-control {
+        text-align: center;
+    }
+    .btn {
+        padding: 10.5px 12px;
+        border-radius: 15px;
+        margin-left: -15px;
+    }
+}
+#eight {
+    div#copy-right {
+        margin-top: 300px;
+    }
+}
+section {
+    min-height: 35em;
+    &:nth-child(even) {
+        background-color: $even-section-bg-color;
+    }
+}
+[role="document"] {
+    z-index: 2000;
+}
+p.marketing-quotes-title {
+    font-size: xx-large;
+}
+p.marketing-quotes-text {
+    font-size: large;
+    color: $text-color-even-section;
+    margin-top: -26px;
+}
+p.ask-for-help-title {
+    font-size: x-large;
+}
+
+#navbar {
+    li {
+        a {
+            color: $navbar-link-color;
+            &:focus, &:hover {
+                background-color: #338473;
+                color: white;
+            }
+        }
+        .modal-trigger-login-btn {
+            margin-top: 10px;
+            padding: 3px 22px;
+            margin-left: 12px;
+        }
+    }
+}
+#modal-trigger-login-btn-only-phons {
+    background-color: $yellow;
+    height: 50px;
+    width: 70%;
+    border-radius: 0;
+    margin: 0 auto;
+    font-size: 18px;
+}
+#signinlink {
+    margin-right: 60px;
+}
+#btn-signup {
+    background-color: $yellow;
+    border-color: #fff;
+}
+p {
+    word-break: break-all;
+}
+.wrp {
+    margin-top: 60px;
+}
+
+/*************************************************
+**********overwrite Bootstrap classes ************
+**************************************************/
+
+.panel-info {
+    border-color: #fff;
+    .panel-heading {
+        color: white;
+        background-color: #f0ad4e;
+        border-color: #fff;
+    }
+}
+.btn-success {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: white;
+}
+.modal-content {
+    border: none;
+}

@@ -1,0 +1,47 @@
+#one {
+    @include bg-image('../img/dummy/jpg/section-one-bg-4.jpg', cover, 5% 0%, no-repeat);
+    position: relative;
+    min-height: 90vh; // http://caniuse.com/#feat=viewport-units'
+
+    .navbar {
+        @include MQ(XS) {
+            background-color: transparent;
+        }
+    }
+    .row {
+        padding-top: 60px;
+    }
+    img {
+    }
+    p#main-marketing-quote {
+        margin-top: -10px;
+        text-shadow:
+          0 0 50px #f4f9f2,
+          0 0 40px #fdfdfb;
+    }
+}
+
+#i-need-help-with-wrp {
+    width: 50%;
+    position: absolute;
+    bottom: 70px;
+    transform: translate(-50%);
+    left: 50%;
+
+    > label {
+        font-size: x-large;
+        font-weight: normal;
+        margin-left: 12px;
+        color: #ffbb00;
+        text-shadow: 0 0 50px #01080b, 0 1px 1px rgba(3, 3, 3, 0.57);
+    }
+}
+input.extra-text-box-style {
+  background-color: rgba(2,4,3,.75);
+  border-radius: 15px;
+  height: 43px;
+  font-size: 22px;
+  border: 1px solid #030303;
+  border-radius: 6px;
+  color: #ede4db;
+}
