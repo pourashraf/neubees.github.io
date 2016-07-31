@@ -91,34 +91,49 @@ body {
   left: -55px;
 }
 
-/* line 69, ../sass/partials/_basic.scss */
+/* line 1, ../sass/partials/_neuBees.scss */
+#neuBees {
+  padding: 2rem 0 4rem 0;
+  min-height: 640px;
+}
+/* line 4, ../sass/partials/_neuBees.scss */
+#neuBees h2 {
+  font-size: 45px;
+  color: #1F9E7A;
+}
+/* line 8, ../sass/partials/_neuBees.scss */
+#neuBees div.well-lg {
+  margin: 30px 0 0 90px;
+}
+
+/* line 72, ../sass/partials/_basic.scss */
 #three {
   min-height: 550px;
 }
-/* line 71, ../sass/partials/_basic.scss */
+/* line 74, ../sass/partials/_basic.scss */
 #three .container {
   margin-top: 60px;
 }
-/* line 74, ../sass/partials/_basic.scss */
+/* line 77, ../sass/partials/_basic.scss */
 #three img.img-fluid {
   max-width: 50%;
 }
 
-/* line 79, ../sass/partials/_basic.scss */
+/* line 82, ../sass/partials/_basic.scss */
 #four .container {
   margin-top: 60px;
 }
-/* line 82, ../sass/partials/_basic.scss */
+/* line 85, ../sass/partials/_basic.scss */
 #four div.well {
   background-color: #fefefe;
   border-color: #eee;
 }
-/* line 86, ../sass/partials/_basic.scss */
+/* line 89, ../sass/partials/_basic.scss */
 #four img.img-fluid {
   max-width: 50%;
 }
 
-/* line 90, ../sass/partials/_basic.scss */
+/* line 93, ../sass/partials/_basic.scss */
 #footer {
   height: 50px;
   background-color: #156951;
@@ -126,66 +141,66 @@ body {
   padding-top: 15px;
 }
 
-/* line 97, ../sass/partials/_basic.scss */
+/* line 100, ../sass/partials/_basic.scss */
 section {
   min-height: 35em;
   background-color: #f9faf9;
   font: 1.2em lato-regular-webfont;
 }
 
-/* line 103, ../sass/partials/_basic.scss */
+/* line 106, ../sass/partials/_basic.scss */
 .divider-wrp {
   background-color: #f9faf9;
 }
 
-/* line 106, ../sass/partials/_basic.scss */
+/* line 109, ../sass/partials/_basic.scss */
 p.marketing-quotes-title {
   font-size: xx-large;
   margin-top: 60px;
 }
 
-/* line 110, ../sass/partials/_basic.scss */
+/* line 113, ../sass/partials/_basic.scss */
 p.marketing-quotes-text {
   font-size: large;
   color: #605f5f;
   margin-top: -26px;
 }
 
-/* line 115, ../sass/partials/_basic.scss */
+/* line 118, ../sass/partials/_basic.scss */
 p.ask-for-help-title {
   font-size: x-large;
 }
 
-/* line 118, ../sass/partials/_basic.scss */
+/* line 121, ../sass/partials/_basic.scss */
 #i-need-help-with-wrp {
   width: 430px;
   margin-top: 320px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 118, ../sass/partials/_basic.scss */
+  /* line 121, ../sass/partials/_basic.scss */
   #i-need-help-with-wrp {
     margin-top: 170px;
   }
 }
-/* line 124, ../sass/partials/_basic.scss */
+/* line 127, ../sass/partials/_basic.scss */
 #i-need-help-with-wrp > label {
   font-size: x-large;
   font-weight: normal;
 }
 
-/* line 130, ../sass/partials/_basic.scss */
+/* line 133, ../sass/partials/_basic.scss */
 p {
   word-break: break-word;
 }
 
-/* line 133, ../sass/partials/_basic.scss */
+/* line 136, ../sass/partials/_basic.scss */
 input.extra-text-box-style {
   background-color: rgba(255, 255, 255, 0.6);
   height: 43px;
   font-size: 22px;
 }
 
-/* line 139, ../sass/partials/_basic.scss */
+/* line 142, ../sass/partials/_basic.scss */
 div.divider {
   height: 2px;
   position: relative;
@@ -195,7 +210,7 @@ div.divider {
   text-align: center;
 }
 
-/* line 147, ../sass/partials/_basic.scss */
+/* line 150, ../sass/partials/_basic.scss */
 div.divider:after {
   display: inline-block;
   margin: 0 0 11px 30px;
@@ -206,7 +221,7 @@ div.divider:after {
   width: 45%;
 }
 
-/* line 156, ../sass/partials/_basic.scss */
+/* line 159, ../sass/partials/_basic.scss */
 div.divider:before {
   display: inline-block;
   margin: 0 30px 11px 0;
@@ -217,7 +232,7 @@ div.divider:before {
   width: 45%;
 }
 
-/* line 166, ../sass/partials/_basic.scss */
+/* line 169, ../sass/partials/_basic.scss */
 .hexagon {
   position: absolute;
   width: 30px;
@@ -229,7 +244,7 @@ div.divider:before {
   transform: translate(-50%);
 }
 
-/* line 177, ../sass/partials/_basic.scss */
+/* line 180, ../sass/partials/_basic.scss */
 .hexagon:before,
 .hexagon:after {
   content: "";
@@ -240,13 +255,13 @@ div.divider:before {
   left: 0;
 }
 
-/* line 187, ../sass/partials/_basic.scss */
+/* line 190, ../sass/partials/_basic.scss */
 .hexagon:before {
   bottom: 100%;
   border-bottom: 8.66px solid #efc441;
 }
 
-/* line 192, ../sass/partials/_basic.scss */
+/* line 195, ../sass/partials/_basic.scss */
 .hexagon:after {
   top: 100%;
   width: 0;
