@@ -94,28 +94,34 @@ body {
 
 /* line 1, ../sass/partials/_neuBees.scss */
 .section {
-  padding: 2rem 0;
+  padding: 2rem 0 8rem 0;
+  font-family: lato-light-webfont;
 }
 /* line 4, ../sass/partials/_neuBees.scss */
 .section h2 {
-  font-size: 50px;
-  color: #1F9E7A;
+  font-size: 57px;
+  color: #efc441;
 }
 /* line 9, ../sass/partials/_neuBees.scss */
+.section h3 {
+  color: #5a6565;
+  font-size: 42px;
+  margin-bottom: 1.3rem;
+}
+/* line 15, ../sass/partials/_neuBees.scss */
 .section p {
   font-size: 28px;
   color: #707575;
   line-height: 1.4;
-  padding: 3rem 1rem 1rem 1rem;
+  margin-top: 0;
 }
-/* line 15, ../sass/partials/_neuBees.scss */
+/* line 21, ../sass/partials/_neuBees.scss */
 .section .container {
-  margin-top: 6rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
-/* line 19, ../sass/partials/_neuBees.scss */
+/* line 24, ../sass/partials/_neuBees.scss */
 .section .container:last-of-type {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 /* line 73, ../sass/partials/_basic.scss */
