@@ -93,28 +93,28 @@ body {
 }
 
 /* line 1, ../sass/partials/_neuBees.scss */
-#neuBees {
+.section {
   padding: 2rem 0;
 }
 /* line 4, ../sass/partials/_neuBees.scss */
-#neuBees h2 {
+.section h2 {
   font-size: 50px;
   color: #1F9E7A;
 }
 /* line 9, ../sass/partials/_neuBees.scss */
-#neuBees p {
+.section p {
   font-size: 28px;
   color: #707575;
   line-height: 1.4;
   padding: 3rem 1rem 1rem 1rem;
 }
 /* line 15, ../sass/partials/_neuBees.scss */
-#neuBees .container {
+.section .container {
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
 /* line 19, ../sass/partials/_neuBees.scss */
-#neuBees .container:last-of-type {
+.section .container:last-of-type {
   margin-top: 10rem;
 }
 
