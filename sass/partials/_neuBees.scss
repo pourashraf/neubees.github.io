@@ -1,11 +1,22 @@
 #neuBees {
-  padding: 2rem 0 4rem 0;
-    min-height: 640px;
-    h2 {
-      font-size: 45px;
-      color: #1F9E7A;
-    }
-    div.well-lg {
-        margin: 30px 0 0 90px;
-    }
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 50px;
+    color: #1F9E7A;
+  }
+
+  p {
+    font-size: 28px;
+    color: #707575;
+    line-height: 1.4;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .container {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
+  .container:last-of-type {
+    margin-top: 10rem;
+  }
 }
