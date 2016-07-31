@@ -2,7 +2,7 @@ body{
 font-family: "lato-regular-webfont", Helvetica, Arial, sans-serif;
 }
 #one {
-    @include bg-image('../img/jpg/section01-bg.jpg', cover, 50% 0, no-repeat);
+    @include bg-image('../img/jpg/section01-bg.jpg', cover, top left, no-repeat);
     min-height: 700px;
     @include MQ(L) {
         min-height: 900px;
@@ -37,6 +37,9 @@ font-family: "lato-regular-webfont", Helvetica, Arial, sans-serif;
 }
 #two {
     min-height: 640px;
+    h2{
+      line-height: .5;
+    }
     div.well-lg {
         margin: 30px 0 0 90px;
     }
@@ -44,11 +47,12 @@ font-family: "lato-regular-webfont", Helvetica, Arial, sans-serif;
         color: red;
     }
     ul {
+      padding-top:20px;
         li {
             padding-bottom: 20px;
             list-style: none;
             position: relative;
-            font: 1.1em lato-bold-webfont;
+            //font: 1.1em lato-bold-webfont;
             &:before {
                 background-size: 30px 30px;
                 //background-image: url("../img/png/list-checkmark.png");
@@ -131,10 +135,66 @@ input.extra-text-box-style {
     height: 43px;
     font-size: 22px;
 }
+
 div.divider {
-    height: 10px;
-    background: url('../img/png/hexagon.png') repeat-x;
+    height: 2px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+div.divider:after {
+    display: inline-block;
+    margin: 0 0 11px 30px;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #efc441;
+    width: 45%;
+}
+div.divider:before {
+    display: inline-block;
+    margin: 0 30px 11px 0;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #efc441;
+    width: 45%;
+}
+
+.hexagon {
+  position: absolute;
+  width: 30px;
+  height: 17.32px;
+  background-color: #efc441;
+  margin: 8.66px 0;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  left: 0;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 8.66px solid #efc441;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 8.66px solid #efc441;
+}
+
 /*************************************************
 **********font formats ************
 **************************************************/
